@@ -1,0 +1,91 @@
+/* глобальные параметры */
+*
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+  font-family: 'Rubik', sans-serif
+
+.visually-hidden 
+  position: absolute
+  clip: rect(0 0 0 0)
+  width: 1px
+  height: 1px
+  margin: -1px
+
+.clearfix:after
+  display: block
+  content: ""
+  clear: both 
+
+.wrap
+  max-width: 1680px
+  margin: 0 auto
+  &__video iframe
+    overflow: hidden
+    height: 100%
+    width: 100%
+    max-width: 720px
+    min-height: 576px 
+    margin: 0 auto
+    
+.wrap__content
+  max-width: 1200px
+  margin: 0 auto
+/* конец глобальных параметров */
+
+
+
+.section
+  height: 100vh
+  width: 100% 
+  background-color: $cb_d
+  &-title
+    font-weight: 500
+    font-size: 1.25em
+    // color: $ct_i
+
+.title
+  &_dark
+    color: $ct_i
+  &_light
+    color: $ct_b
+  &_middle
+    margin-top: 1em
+    font-size: 1em
+  &_small
+    margin-top: 1em
+    font-size: 0.25em
+
+.centered
+  width: 100%
+  text-align: center
+.down
+  margin-bottom: 3em
+  
+.mark-title
+  &:before
+    display: inline-block
+    width: .25em
+    height: 1em
+    margin-right: 0.5em
+    content: ""
+    background-color: $ct_a
+    
+/*кнопка в начало - перенести */
+.totop
+  position: fixed
+  bottom: .5em
+  right: .25em
+  height: 2em
+  width: 2em
+  line-height: 2em
+  text-align: center
+  font-size: 1em
+  -webkit-border-radius: 2em 
+  border-radius: 2em 
+  background-color: $ct_a
+  color: $ct_i
+  text-decoration: none
+  &:hover
+    color: #FFF 

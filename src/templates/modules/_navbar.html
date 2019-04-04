@@ -1,0 +1,23 @@
+<nav class="navbar clearfix">
+  <!-- <div class="line"> -->
+    <div class="wrap_content clearfix">
+        <div class="menu__icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a class="logo__link" href="/index.html"><img class="logo__img" src="img/logo%408x.png" alt="логотип" /></a>
+
+        <ul class="navbar__list">
+          {% import "data/navdata.html" as navbars %}
+            {% for item in navbars.item %}
+              <li class="navbar__item">
+                <a class="navbar__link" href="{{item.link}}">{{item.name}}</a>
+              </li>
+            {%endfor%}
+        </ul>
+    </div>
+  <!-- </div> -->
+</nav>
