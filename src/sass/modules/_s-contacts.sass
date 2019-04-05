@@ -1,22 +1,36 @@
 .contacts
   position: relative
   background-color: $cb_c
-  padding-top: 2em
-  padding-bottom: 5em
-  font-size: 75%
+  padding-top: 4em
+  padding-bottom: 4em
+  font-size: 0.5em
   &__section-title
     margin-left: 2em
   &_large
     font-size: 70%
-    margin-bottom: 1em
-    margin-top: 1em
+    // padding-bottom: 1em
+    margin-left: 3em
+    // padding-top: 3em
+  &__mark-up
+    position: absolute
+    bottom: 2em
+    right: 10%
+    width: 30%
+    font-size: 1em
+    background-color: #FFF 
+    +r(760)
+      position: relative
+      width: 70%
+      margin: 0 auto
+      font-size: 2em
+      bottom: initial
+      right: initial
+      margin-top: 0.5em
+      padding-top: 0.6em
+      padding-bottom: .6em
+      
 
-.mark-up__contacts
-  float: right
-  margin-top: -25%
-  width: 50%
-  // height: 50vh
-  background-color: #FFF 
+
   
 .tel
   text-decoration: none
@@ -36,3 +50,5 @@
   text-align: center
   text-decoration: none
   color: $ct_b
+  +r(760)
+    margin-bottom:  

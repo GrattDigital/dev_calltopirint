@@ -3,6 +3,10 @@
   @media only screen and (max-width: $width+ "px")
     @content
 
+=rland($width)
+  @media only screen and (max-width: $width+ "px") and (orientation: landscape)
+    @content
+
 =rmin($width)
   @media only screen and (min-width: $width+ "px")
     @content

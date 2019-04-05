@@ -1,91 +1,116 @@
-.servises
+.services
   position: relative
-  height: initial!important
-  padding-bottom: 2em 
+  padding-top: 1em
+  padding-bottom: 2em
+  background-color: $cb_d
+
   &__section-title
     float: left
-    font-size: 85%!important
+    font-size: .7em
     margin-left: 10% 
-    color: $ct_b!important
+    color: $ct_b
+
   &-items-wrap
     display: inline-block
     width: 60%
-    margin-left: 5%
+    margin-left: 8%
+    margin-bottom: 2em
+    +r(1024)
+      width: 90%
+      margin-left: 10%
+      margin-top: 1em 
+
   &-item
     float: left
-    font-size: 1rem
+    font-size: .2em
     width: 45%
     margin-bottom: 2.5em
+    +r(860)
+      width: 40%
+      font-size: 0.3em
+    +r(540)
+      width: 90%
+      font-size: 0.5em
+
   &__psevdo-logo
+    font-size: .9em
+
+  &__wrapper
     position: relative
-    width: 2.5rem
-    height: 2.5rem
-    font-size: 1.25rem
-    margin-bottom: .5em 
-    & div
-      background-color: $ct_a
-      
-.section-title_large
-  font-size: 200%!important
-  line-height: 1.1em
-  margin-left: 10%
-  margin-top: .5em
+    font-size: .7em 
 
-
-/* в основной модуль */
-.item-title
-  font-size: 2.5em
-  font-weight: 500
-  color: $ct_b
-  margin-bottom: 0.5em
-.item
-  &__descriptions
-    font-size: 1.5em
-    font-weight: 300
-    list-style: square
-    color: $ct_b
-    margin-left: 1.1em
-
-/**/
-.wrapper
-  position: relative
-
-.services__wrapper
-  font-size: .7em 
-
-.servises-img
-  width: auto
-  height: 70vh
-  margin-left: 10%
+  &-img
+    width: 70%
+    margin-left: 10%
   
-.mark-up__l
-  position: absolute
-  right: 10%
-  top: 10vh
-  width: 50vh
-  height: 50vh
-  background-color: $cb_l
-  // margin-left: 10%
-  // margin-top: 10%
-  font-size: 70% 
+.mark-up
+  &__l
+    right: 10%
+    top: 25%
+    width: 35%
+    padding: 1.5%
+    background-color: $cb_l
+    font-size: 70%
+    +r(540)
+      position: relative
+      width: 70%
+      margin: 0 auto
+      right: initial
+      top: initial
+      margin-top: -2em
+      font-size: 1em
+  &__section-title
+    margin-top: 1em
+    margin-left: 12.5%
+    font-size: 1.4em
+    +r(540)
+      font-size: 1em
 
-.descriptions__mark-up
-  margin-left: 10%
-  margin-top: 1em 
-  margin-right: 10%
-  font-size: 0.55em
+  &__descriptions
+    display: block
+    margin-left: 12.5%
+    margin-bottom: 1.5em
+    margin-top: 1.5em 
+    margin-right: 10%
+    font-size: 0.55em
+    +r(540)
+      font-size: 0.7em
   
 .steps
   width: 100%
   font-size: .5em 
-  background-color: $ct_a
+  text-align: center
+  +r(540)
+    font-size: .6em
   &__title
+    position: relative
     display: inline-block
-    // line-height: calc( 15vh - 1.5em)
-    margin-left: 3em
-    margin-right: 3em
+    width: 30%
+    padding-top: 2em
+    padding-bottom: 2em
     text-align: center
-    // margin-top: 0
+    background-color: $ct_a
+    +r(760)
+      display: block
+      width: 70%
+      margin: .5em auto
+      font-size: 1.2em 
+
+
 .arrow
-  height: 15vh
-  vertical-align: middle
+  &:before
+    content: ''
+    top: 0
+    right: -4.65em
+    position: absolute
+    border: 2.65em solid transparent
+    border-left: 2em solid $ct_b
+    z-index: 1 
+  &:after
+    content: ''
+    top: 0
+    right: -4.4em
+    position: absolute
+    border: 2.65em solid transparent
+    border-left: 2em solid $ct_a
+    z-index: 1 

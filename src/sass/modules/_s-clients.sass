@@ -1,8 +1,7 @@
 .clients
-  background-color: $cb_l!important
-  padding-top: 2em
+  background-color: $cb_l
+  padding-top: 1em
   padding-bottom: 2em 
-  height: initial!important 
   &__section-title
     margin-left: 10%
   &__wrapper
@@ -13,15 +12,22 @@
 .logowrap
   position: relative
   display: inline-block
-  // min-width: 286px
   width: 25% 
   height: 164px
-  // background-color: red 
+  +r(1400)
+    height: 140px
+  +r(1100)
+    height: 120px 
+  +r(950)
+    width: 50%
+    height: 100px 
+  +r(500)
+    height: 70px
+
 
 .clients-logo
   position: absolute
   left: 50%
-  // top: 50%
   -webkit-transform: translate(-50%, -50%)
   -moz-transform: translate(-50%, -50%)
   -ms-transform: translate(-50%, -50%)
