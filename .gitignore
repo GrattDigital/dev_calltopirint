@@ -30,4 +30,9 @@ nbproject
 _tmp
 node_modules
 bower_components
+
+#Ext file
+
+#fotorama.js
+#jquery.min.js
 CNAME
