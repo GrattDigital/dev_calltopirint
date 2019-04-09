@@ -33,6 +33,8 @@ bower_components
 
 #Ext file
 
-fotorama.js
-jquery.min.js
-CNAME
+#fotorama.js
+#jquery.min.js
+#CNAME
+#fotorama.css
+#fotorama@2x.png
