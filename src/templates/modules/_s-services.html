@@ -1,91 +1,20 @@
 <section class="services wrap clearfix" id="services">
   <h2 class="section-title services__section-title mark-title">Мы делаем:</h2>
+
   <div class="services-items-wrap">
-
-    <div class="services-item">
-      {{blocks.ps_logo('services', 'inverse')}}
-      <h3 class="item-title">Наружная реклама</h3>
-      <ul class="item__descriptions">
-        {% import "data/servises_items/item_title.html" as tit %}
-          {% for list in tit.list %}
-              {% import "data/servises_items/outdoordata.html" as services %}
-                {% for item in services.item %}
-                  <li class="item__description">{{item.text}}</li>
-                {%endfor%}
-          {%endfor%}
-      </ul>
-    </div>
-
-    <div class="services-item">
-      {{blocks.ps_logo('services', 'inverse')}}
-      <h3 class="item-title">Интерьерная реклама</h3>
-      <ul class="item__descriptions">
-        {% import "data/servises_items/item_title.html" as tit %}
-          {% for list in tit.list %}
-              {% import "data/servises_items/interior.html" as services %}
-                {% for item in services.item %}
-                  <li class="item__description">{{item.text}}</li>
-                {%endfor%}
-          {%endfor%}
-      </ul>
-    </div>
-
-    <div class="services-item">
-      {{blocks.ps_logo('services', 'inverse')}}
-      <h3 class="item-title">POS материалы</h3>
-      <ul class="item__descriptions">
-        {% import "data/servises_items/item_title.html" as tit %}
-          {% for list in tit.list %}
-              {% import "data/servises_items/pos_mat.html" as services %}
-                {% for item in services.item %}
-                  <li class="item__description">{{item.text}}</li>
-                {%endfor%}
-          {%endfor%}
-      </ul>
-    </div>
-
-    <div class="services-item">
-      {{blocks.ps_logo('services', 'inverse')}}
-      <h3 class="item-title">Цифровая печать</h3>
-      <ul class="item__descriptions">
-        {% import "data/servises_items/item_title.html" as tit %}
-          {% for list in tit.list %}
-              {% import "data/servises_items/digprint.html" as services %}
-                {% for item in services.item %}
-                  <li class="item__description">{{item.text}}</li>
-                {%endfor%}
-          {%endfor%}
-      </ul>
-    </div>
-
-    <div class="services-item">
-      {{blocks.ps_logo('services', 'inverse')}}
-      <h3 class="item-title">Рекламные конструкции</h3>
-      <ul class="item__descriptions">
-        {% import "data/servises_items/item_title.html" as tit %}
-          {% for list in tit.list %}
-              {% import "data/servises_items/construct.html" as services %}
-                {% for item in services.item %}
-                  <li class="item__description">{{item.text}}</li>
-                {%endfor%}
-          {%endfor%}
-      </ul>
-    </div>
-
-    <div class="services-item">
-      {{blocks.ps_logo('services', 'inverse')}}
-      <h3 class="item-title">Монтажные работы</h3>
-      <ul class="item__descriptions">
-        {% import "data/servises_items/item_title.html" as tit %}
-          {% for list in tit.list %}
-              {% import "data/servises_items/montwork.html" as services %}
-                {% for item in services.item %}
-                  <li class="item__description">{{item.text}}</li>
-                {%endfor%}
-          {%endfor%}
-      </ul>
-    </div>
-
+      {% import "data/servises_items/item_title.html" as tit %}
+        {% for list in tit.list %}
+          <div class="services-item">
+            {{blocks.ps_logo('services', 'inverse')}}
+            <h3 class="item-title">{{list.title}}</h3>
+            <ul class="item__descriptions">
+                {% import "data/servises_items/" + list.data + ".html" as services %}
+                  {% for item in services.item %}
+                    <li class="item__description">{{item.text}}</li>
+                  {%endfor%}
+            </ul>
+          </div>
+        {%endfor%}
   </div>
 
   <div class="services__wrapper clearfix">
