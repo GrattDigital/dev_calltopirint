@@ -1,6 +1,7 @@
 {
   "name": "calltoprint",
   "version": "0.1.1",
+  "license": "UNLICENSED",
   "scripts": {
     "ghpages": "git subtree push --prefix build origin gh-pages",
     "build": "gulp build --production",
