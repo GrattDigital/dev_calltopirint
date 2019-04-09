@@ -97,6 +97,14 @@
     padding-bottom: 2em
     text-align: center
     background-color: $ct_a
+    margin-left: -.5em 
+    // border: .2em solid $ct_b
+    &:first-child
+      +r(760)
+        width: 50%
+    &:last-child
+      +r(760)
+        width: 90%
     +r(760)
       display: block
       width: 70%
@@ -116,7 +124,7 @@
   &:after
     content: ''
     top: 0
-    right: -4.4em
+    right: -4.5em
     position: absolute
     border: 2.65em solid transparent
     border-left: 2em solid $ct_a
