@@ -14,9 +14,13 @@
 .logo
   &__link
     display: inline-block
+    margin-top: 6px
+    margin-left: 4px
     // display: none
     line-height: 0
-    // +rmin(992)
+    +rmin(992)
+      margin-top: 0
+      margin-left: 0
     //   display: inline-block
   &__img
     margin: 10px
@@ -27,3 +31,9 @@
 
 .clean-lh
   line-height: 0
+
+.fixed_header
+  position: fixed
+  background-color: $cb_c
+  -webkit-box-shadow: 0 0 5px #000 
+  box-shadow: 0 0 5px #000 
