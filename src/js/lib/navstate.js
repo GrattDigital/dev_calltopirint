@@ -25,7 +25,7 @@ function navstate() {
     } else if (window.pageYOffset > heroSectionHeight) {
       header.classList.add('fixed_header');
     };
-    console.log(window.pageYOffset);
+    // console.log(window.pageYOffset);
   };
 
   // var heroSectionBottom = heroSection.getBoundingClientRect().bottom + window.pageYOffset;
@@ -39,8 +39,8 @@ function navstate() {
   // };
 
 
-  console.log(heroSection);
-  console.log(heroSectionHeight);
+  // console.log(heroSection);
+  // console.log(heroSectionHeight);
 
 
 

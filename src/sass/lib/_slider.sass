@@ -1,0 +1,83 @@
+/* transition */
+.nav-ctrl span, .dots-ctrl span 
+  transition: all 0.3s
+
+/*** CONTENT ***/
+.gallery 
+  width: 100%
+  visibility: hidden
+  margin: 0 auto
+
+.slider 
+  width: 100%
+  max-width: 1024px
+  position: relative
+  overflow: hidden
+  margin: 0 auto
+  
+.stage
+  overflow: hidden
+.stage > div 
+  float: left
+  position: relative
+.stage > div img 
+  width: 100%
+  max-width: 800px
+  height: auto
+
+.control
+  width: 100%
+  text-align: center
+  position: relative
+
+.nav-ctrl
+  display: none
+  line-height: 20px
+  margin-top: 10px
+.nav-ctrl span
+  width: 100px
+  height: 30px
+  display: inline-block
+  font-weight: 500
+  font-size: 12px
+  line-height: 30px
+  color: $ct_i
+  font-family: 'Roboto', sans-serif
+  text-transform: uppercase
+  text-align: center
+  margin: 0 5px
+  border: solid 1px $ct_a
+  -webkit-border-radius: 3px
+  border-radius: 3px
+  outline: none
+  -webkit-user-select: none
+  user-select: none
+  background-color: $ct_a
+  cursor: pointer
+  transition: all 0.3s
+.nav-ctrl span:hover
+  border-color: $cb_c
+  background-color: $cb_c
+.nav-ctrl .disable, .nav-ctrl .disable:hover
+  border: solid 1px $c_gd
+  background-color: $c_gd
+  opacity: 0.4
+  cursor: default
+
+.dots-ctrl
+  display: none
+  margin-top: 10px
+.dots-ctrl li
+  display: inline-block
+.dots-ctrl span
+  width: 10px
+  height: 10px
+  display: block
+  margin: 5px
+  -webkit-border-radius: 50%
+  border-radius: 50%
+  background-color: $cb_c
+  opacity: 0.4
+  cursor: pointer
+.dots-ctrl .active span, .dots-ctrl span:hover
+  opacity: 1
