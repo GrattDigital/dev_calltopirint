@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>Call to print</title>
-    <!-- <mark><script src="../js/modernizr-custom.js"></script></mark> -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#fff" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" media="all" href="css/app.css" />
-    <!-- <link  href="/css/fotorama.css" media="all" rel="stylesheet"/>  -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet" />
   </head>
   <body>
@@ -272,43 +272,107 @@
       </section>
       <section class="portfolio wrap clearfix" id="portfolio">
         <h2 class="section-title portfolio__section-title mark-title">Наши работы</h2>
-        <div id="slider" class="gallery">
-          <div class="slider">
-            <div class="stage">
-              <div>
-                <img src="img/portfolio/1.jpg" alt="">
-              </div>
-              <div>
-                <img src="img/portfolio/2.jpg" alt="">
-              </div>
-              <div>
-                <img src="img/portfolio/3.jpg" alt="">
-              </div>
-              <div>
-                <img src="img/portfolio/4.jpg" alt="">
-              </div>
-              <div>
-                <img src="img/portfolio/5.jpg" alt="">
-              </div>
-              <div>
-                <img src="img/portfolio/6.jpg" alt="">
-              </div>
-              <div>
-                <img src="img/portfolio/7.jpg" alt="">
-              </div>
-              <div>
-                <img src="img/portfolio/8.jpg" alt="">
-              </div>
+        <div class="portfolio__slider">
+          <div class="slider_for">
+            <div class="slide">
+              <img src="img/portfolio/1.jpg" alt="Изображение 1" class="slider_for__img">
+              <h3 class="sl__title">Печать материала и монтаж</h3>
+            </div>
+            <div class="slide">
+              <img src="img/portfolio/2.jpg" alt="Изображение 2" class="slider_for__img">
+              <h3 class="sl__title"> Печать материала и монтаж</h3>
+            </div>
+            <div class="slide">
+              <img src="img/portfolio/3.jpg" alt="Изображение 3" class="slider_for__img">
+              <h3 class="sl__title">Печать материала и монтаж</h3>
+            </div>
+            <div class="slide">
+              <img src="img/portfolio/4.jpg" alt="Изображение 4" class="slider_for__img">
+              <h3 class="sl__title"> Печать материала и монтаж</h3>
+            </div>
+            <div class="slide">
+              <img src="img/portfolio/5.jpg" alt="Изображение 5" class="slider_for__img">
+              <h3 class="sl__title"> Печать материала и монтаж</h3>
+            </div>
+            <div class="slide">
+              <img src="img/portfolio/6.jpg" alt="Изображение 6" class="slider_for__img">
+              <h3 class="sl__title"> Печать материала и монтаж</h3>
+            </div>
+            <div class="slide">
+              <img src="img/portfolio/7.jpg" alt="Изображение 7" class="slider_for__img">
+              <h3 class="sl__title"> Печать материала и монтаж</h3>
+            </div>
+            <div class="slide">
+              <img src="img/portfolio/8.jpg" alt="Изображение 8" class="slider_for__img">
+              <h3 class="sl__title"> Печать материала и монтаж</h3>
             </div>
           </div>
-          <div class="control">
-            <div class="nav-ctrl">
-              <span class="prev" data-shift="prev">prev</span>
-              <span class="next" data-shift="next">next</span>
+          <div class="slider_nav__pos ">
+            <div class="slider_nav">
+              <div class="slide">
+                <img src="img/portfolio/1.jpg" alt="Изображение 1" class="slider_nav__img">
+              </div>
+              <div class="slide">
+                <img src="img/portfolio/2.jpg" alt="Изображение 2" class="slider_nav__img">
+              </div>
+              <div class="slide">
+                <img src="img/portfolio/3.jpg" alt="Изображение 3" class="slider_nav__img">
+              </div>
+              <div class="slide">
+                <img src="img/portfolio/4.jpg" alt="Изображение 4" class="slider_nav__img">
+              </div>
+              <div class="slide">
+                <img src="img/portfolio/5.jpg" alt="Изображение 5" class="slider_nav__img">
+              </div>
+              <div class="slide">
+                <img src="img/portfolio/6.jpg" alt="Изображение 6" class="slider_nav__img">
+              </div>
+              <div class="slide">
+                <img src="img/portfolio/7.jpg" alt="Изображение 7" class="slider_nav__img">
+              </div>
+              <div class="slide">
+                <img src="img/portfolio/8.jpg" alt="Изображение 8" class="slider_nav__img">
+              </div>
             </div>
-            <ul class="dots-ctrl"></ul>
           </div>
         </div>
+        <!--     <div id="slider" class="gallery">
+      <div class="slider">
+        <div class="stage">
+          <div>
+            <img src="img/portfolio/1.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portfolio/2.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portfolio/3.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portfolio/4.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portfolio/5.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portfolio/6.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portfolio/7.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/portfolio/8.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="control">
+        <div class="nav-ctrl">
+          <span class="prev" data-shift="prev">prev</span>
+          <span class="next" data-shift="next">next</span>
+        </div>
+        <ul class="dots-ctrl"></ul>
+      </div>
+    </div> -->
         <!--   <div class="slider-2">
     <div class="fotorama" data-nav="thumbs" data-width="100%" data-ratio="537/320"  data-loop="true" >
       <img src="../img/slider/Rectangle Copy10.jpg">
@@ -341,8 +405,6 @@
     <!-- Конец блока вывода данных -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
-    <!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
-    <!-- <script type="text/javascript" src="/js/fotorama.js"></script> -->
     <script type="text/javascript">
       var gallery1 = new Gallery('client',
       {
@@ -391,53 +453,47 @@
           }
         }
       });
-      var gallery1 = new Gallery('slider',
-      {
-        autoScroll: false,
-        nav: true,
-        // включаем постраничную навигацию
-        dots: true,
-        // включаем управление с клавиатуры клавишами навигации "вправо / влево"
-        keyControl: false,
-        // включаем адаптивность
-        responsive: true,
-        // настройки галереи в зависимости от разрешения
-        adaptive:
-        {
-          // настройка работает в диапазоне разрешений 320-560px
-          320:
-          {
-            // одновременно выводится 1 элемент
-            visibleItems: 1,
-            // расстояние между изображениями 5px
-            margin: 5,
-            // запрещаем постраничную навигацию
-            dots: false
-          },
-          // настройка работает в диапазоне разрешений 560-768px
-          560:
-          {
-            // одновременно выводится 1 элемент
-            visibleItems: 1,
-            // расстояние между изображениями 5px
-            margin: 5,
-            // запрещаем постраничную навигацию
-            dots: false
-          },
-          // настройка работает в диапазоне разрешений 768-1024px
-          768:
-          {
-            // одновременно выводятся 2 элемента
-            visibleItems: 2,
-          },
-          // настройка работает в диапазоне разрешений 1024 и выше
-          1024:
-          {
-            // одновременно выводятся 3 элемента
-            visibleItems: 2
-          }
-        }
-      });
+      // var gallery1 = new Gallery('slider', {
+      //     autoScroll: false,
+      //     nav: true,
+      //     // включаем постраничную навигацию
+      //     dots: true,
+      //     // включаем управление с клавиатуры клавишами навигации "вправо / влево"
+      //     keyControl: false,
+      //     // включаем адаптивность
+      //     responsive: true,
+      //     // настройки галереи в зависимости от разрешения
+      //     adaptive: {
+      //       // настройка работает в диапазоне разрешений 320-560px
+      //       320: {
+      //         // одновременно выводится 1 элемент
+      //         visibleItems: 1,
+      //         // расстояние между изображениями 5px
+      //         margin: 5,
+      //         // запрещаем постраничную навигацию
+      //         dots: false
+      //       },
+      //       // настройка работает в диапазоне разрешений 560-768px
+      //       560: {
+      //         // одновременно выводится 1 элемент
+      //         visibleItems: 1,
+      //         // расстояние между изображениями 5px
+      //         margin: 5,
+      //         // запрещаем постраничную навигацию
+      //         dots: false
+      //       },
+      //       // настройка работает в диапазоне разрешений 768-1024px
+      //       768: {
+      //         // одновременно выводятся 2 элемента
+      //         visibleItems: 2,
+      //       },
+      //       // настройка работает в диапазоне разрешений 1024 и выше
+      //       1024: {
+      //         // одновременно выводятся 3 элемента
+      //         visibleItems: 2
+      //       }
+      //     }
+      // });
 
     </script>
     <!-- END scripts -->

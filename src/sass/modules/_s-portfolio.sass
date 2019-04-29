@@ -8,9 +8,73 @@
     color: $ct_b
     margin-top: 1em
     margin-bottom: 1em
+  &__slider
+    position: relative
+    width: 70vw
+    margin: 0 auto
+    padding-bottom: 2.5em
+    +r(1024)
+      width: 80vw
 
-.slider-2
-  width: 80%
-  margin: 0 auto
-  padding-top: 1em 
-  padding-bottom: 4em
+.slider_for__img
+  width: 40vw
+  float: left
+  +r(1024)
+    float: none
+    width: 100%
+    margin: 0 auto
+
+.sl__title
+  width: 25vw
+  float: left
+  margin-left: 5vw
+  color: $ct_b
+  font-size: 0.5em
+  font-weight: 400
+  +r(1024)
+    width: 80vw
+    float: none
+    margin: 1em auto
+    font-size: 0.8em
+
+.slider_nav img
+  opacity: 0.4
+
+.slider_nav .slick-center img
+  opacity: 1
+  -webkit-transform: scale(1.25) 
+  -moz-transform: scale(1.25) 
+  -ms-transform: scale(1.25) 
+  -o-transform: scale(1.25) 
+  transform: scale(1.25)
+  // margin: 0.7vw 
+
+.slider_nav__
+  &pos
+    position: absolute
+    width: 25vw
+    left: 42vw 
+    // right: 0
+    bottom: 2.5em
+    +r(1024)
+      position: relative
+      width: 80vw
+      right: initial
+      left: initial 
+      bottom: initial
+      padding-top: 0.5em
+      margin: 0 auto
+  &img
+    width: 5vw
+    text-align: center
+    margin: 1vw
+    +r(1024)
+      width: 15vw
+      margin: 2vw 
+
+
+// .slider-2
+//   width: 80%
+//   margin: 0 auto
+//   padding-top: 1em 
+//   padding-bottom: 4em

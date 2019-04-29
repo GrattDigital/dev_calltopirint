@@ -425,14 +425,14 @@
   // листаем галерею вращая колёсико мыши
   fn.wheelControl = function(e) {
     // отключаем поведение по умолчанию - скролл страницы
-    e.preventDefault();
+    // e.preventDefault();
     // определяем направление перемещения в зависимости от направления
     // вращения колёсика мыши
     var direction = (e.deltaY > 0) ? 1 : -1;
     // получаем координату Х элемента, до которого должен переместиться слайдер
     var x = this.getNextCoordinates(direction);
     // запускаем прокручивание галереи
-    this.scroll(x, this.options.baseTransition);
+    // this.scroll(x, this.options.baseTransition);
   };
 
   // обработчик нажатия левой кнопки мыши на слайдер или
